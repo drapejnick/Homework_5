@@ -14,12 +14,12 @@ int[] GetArray(int size, int minValue, int maxValue)
     return res;
 }
 
+int[] array = GetArray(4, 1, 5);
 int sum = 0;
-int[] array = GetArray(4, 1, 20);
 
 foreach (int el in array)
 {
-    if (el % 2 == 1)
+    if (el % 2 != 1)
         sum += el;
 }
 Console.WriteLine();

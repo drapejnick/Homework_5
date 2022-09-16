@@ -14,12 +14,12 @@ int[] GetArray(int size, int minValue, int maxValue)
 }
 
 int count = 0;
-int[] array = GetArray(12, 100, 1000);
+int[] array = GetArray(6, 100, 1000);
 int positiveSum = 0;
 
 for (int i = 0; i < array.Length; i++)
 {
-    if (array[i] % 2 == 1)
+    if (array[i] % 2 == 0)
     {
         count++;
     }
