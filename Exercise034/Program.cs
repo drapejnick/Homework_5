@@ -14,8 +14,7 @@ int[] GetArray(int size, int minValue, int maxValue)
 }
 
 int count = 0;
-int[] array = GetArray(6, 100, 1000);
-int positiveSum = 0;
+int[] array = GetArray(4, 100, 1000);
 
 for (int i = 0; i < array.Length; i++)
 {

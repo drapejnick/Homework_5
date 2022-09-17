@@ -14,13 +14,20 @@ int[] GetArray(int size, int minValue, int maxValue)
     return res;
 }
 
-int[] array = GetArray(4, 1, 5);
+int[] array = GetArray(6, -10, 10);
+int index = 0;
+int n = 0;
 int sum = 0;
 
-foreach (int el in array)
+while (index < array.Length)
 {
-    if (el % 2 != 1)
-        sum += el;
+    if (n % 2 != 0)
+    {
+        sum = sum + array[n];
+    }
+    index++;
+    n++;
 }
+
 Console.WriteLine();
 Console.Write($"Сумма элементов стоящих на нечетных позициях = {sum} ");
